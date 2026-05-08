@@ -1,0 +1,161 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+  .ark-wrap { font-family: 'Noto Sans TC', sans-serif; background: #F5F1E8; color: #1A1A1A; padding: 32px 28px; }
+  .ark-header { border: 2px solid #1A1A1A; background: #1A1A1A; color: #F5F1E8; padding: 22px 28px; box-shadow: 6px 6px 0 #E8B800; margin-bottom: 24px; }
+  .ark-kicker { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em; opacity: .6; margin-bottom: 6px; }
+  .ark-title { font-weight: 900; font-size: 26px; line-height: 1.2; }
+  .ark-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; margin-top: 10px; opacity: .7; display: flex; gap: 20px; flex-wrap: wrap; }
+  .tape { height: 12px; background: repeating-linear-gradient(-8deg, #E8B800 0 16%, #E85D3A 16% 32%, #6B8E23 32% 48%, #4A7BA6 48% 64%, #E8B800 64% 80%, #E85D3A 80% 100%); margin-bottom: 20px; }
+  .section { border: 2px solid #1A1A1A; background: #FFFAF0; padding: 20px 22px; margin-bottom: 14px; box-shadow: 4px 4px 0 #1A1A1A; }
+  .section-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .section-badge { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; padding: 3px 10px; border: 2px solid #1A1A1A; }
+  .badge-yellow { background: #E8B800; }
+  .badge-red { background: #E85D3A; color: #fff; }
+  .badge-blue { background: #4A7BA6; color: #fff; }
+  .badge-green { background: #6B8E23; color: #fff; }
+  .badge-dark { background: #1A1A1A; color: #F5F1E8; }
+  .badge-orange { background: #D98C4E; color: #fff; }
+  .section-title { font-weight: 700; font-size: 15px; }
+  .item { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; font-size: 14px; line-height: 1.6; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; border: 2px solid #1A1A1A; flex-shrink: 0; margin-top: 6px; }
+  .dot-yellow { background: #E8B800; }
+  .dot-red { background: #E85D3A; }
+  .dot-blue { background: #4A7BA6; }
+  .dot-green { background: #6B8E23; }
+  .dot-dark { background: #1A1A1A; }
+  .dot-orange { background: #D98C4E; }
+  .q-mark { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; background: #E85D3A; color: #fff; padding: 1px 7px; border-radius: 2px; margin-right: 6px; flex-shrink: 0; margin-top: 3px; }
+  .action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 4px; }
+  .action-card { border: 2px solid #1A1A1A; padding: 14px 16px; background: #F5F1E8; }
+  .action-name { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; margin-bottom: 8px; }
+  .action-item { font-size: 13px; line-height: 1.55; margin-bottom: 6px; padding-left: 12px; border-left: 3px solid #E8B800; }
+  .action-item.red { border-left-color: #E85D3A; }
+  .action-item.blue { border-left-color: #4A7BA6; }
+  .action-item.green { border-left-color: #6B8E23; }
+  .action-item.dark { border-left-color: #1A1A1A; }
+  .action-item.orange { border-left-color: #D98C4E; }
+  .highlight-box { background: #E8B800; border: 2px solid #1A1A1A; padding: 12px 16px; margin-top: 10px; font-size: 13px; line-height: 1.6; }
+  .sub-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: .08em; opacity: .5; margin-bottom: 6px; }
+</style>
+<div class="ark-wrap">
+  <h2 class="sr-only">方舟計畫會議記錄（含 Charles 建議與 Lydia 補充）</h2>
+  <div class="ark-header">
+    <div class="ark-kicker">PROJECT ARK · 方舟計畫 · MEETING MINUTES</div>
+    <div class="ark-title">團隊會議記錄</div>
+    <div class="ark-meta">
+      <span>出席：Qmoa Liu · Lydia Huang · Hsuan · 戴辰軒 · Charles</span>
+      <span>狀態：Phase 0 → Phase 1</span>
+    </div>
+  </div>
+  <div class="tape"></div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-badge badge-yellow">01</span>
+      <span class="section-title">AI 品質保證與人才評估</span>
+    </div>
+    <div class="item"><div class="dot dot-yellow"></div><div>討論確保 AI 品質的核心方式：聚焦於人才的<strong>分析思維、韌性、創造力</strong>與積極主動性等核心能力評估</div></div>
+    <div class="item"><div class="dot dot-yellow"></div><div>強調多元性與積極主動是 AI 人才的重要特質，基礎教育與創意思維是維持高標準的關鍵支柱</div></div>
+    <div class="item"><div class="dot dot-yellow"></div><div>早期階段評估聚焦於平台穩定性，Phase 0 與 Phase 1 正進行初步測試，採階段性驗證以降低風險</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-badge badge-red">02</span>
+      <span class="section-title">團隊溝通與協作優化</span>
+    </div>
+    <div class="item"><div class="dot dot-red"></div><div>多位成員反映訊息時機與清晰度有待提升，需要更明確的溝通協議以避免誤解</div></div>
+    <div class="item"><div class="dot dot-red"></div><div>Lydia Huang 等成員表示願意持續對話，改善跨職能團隊的協作流程</div></div>
+    <div class="item"><div class="dot dot-red"></div><div>本次會議進行了團隊成員相互確認，有助於釐清角色責任、建立更順暢的合作基礎</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-badge badge-blue">03</span>
+      <span class="section-title">平台開發進度更新</span>
+    </div>
+    <div class="item"><div class="dot dot-blue"></div><div>平台功能持續迭代中，目前處於早期開發階段，正逐步新增與測試各項功能模組</div></div>
+    <div class="item"><div class="dot dot-blue"></div><div>AI 系統評估機制聚焦於人才評估標準與系統韌性，技術與人才面向並重</div></div>
+    <div class="item"><div class="dot dot-blue"></div><div>採逐步推進方式進行平台強化，與 AI 能力發展目標保持一致</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-badge badge-green">04</span>
+      <span class="section-title">領導視角與策略方向</span>
+    </div>
+    <div class="item"><div class="dot dot-green"></div><div><strong>Qmoa Liu</strong>：強調透過結構化評估與階段性推進維持 AI 品質，人才因素與技術指標同等重要</div></div>
+    <div class="item"><div class="dot dot-green"></div><div><strong>Hsuan</strong>：指出社群參與和團隊協作是成功的核心驅動力</div></div>
+    <div class="item"><div class="dot dot-green"></div><div>以基礎技能與積極態度作為長期成功的支柱，兼顧技術嚴謹性與團隊動能</div></div>
+  </div>
+
+  <div class="section" style="border-color:#1A1A1A; box-shadow:4px 4px 0 #E8B800; background:#FFFAF0;">
+    <div class="section-head">
+      <span class="section-badge badge-dark">05</span>
+      <span class="section-title">Charles 建議：需求確認與驗證優先</span>
+    </div>
+    <div class="sub-label">產品方向</div>
+    <div class="item"><div class="dot dot-dark"></div><div><strong>確認與驗證需求</strong>優先於功能開發，先釐清哪個功能應最先做</div></div>
+
+    <div style="margin-top:14px;"></div>
+    <div class="sub-label">HR 與企業端需求待釐清</div>
+    <div class="item"><div class="q-mark">?</div><div>履歷 A/B Test 的實際需求是否存在？</div></div>
+    <div class="item"><div class="q-mark">?</div><div>很多企業其實不看履歷，直接讓 AI 掃描——平台定位需重新考量</div></div>
+    <div class="item"><div class="q-mark">?</div><div>是否要接入 LinkedIn 數據？技術可行性與授權問題需評估</div></div>
+    <div class="item"><div class="q-mark">?</div><div><strong>技能需求方</strong>（企業端）本身是否也不需要以 AI 技能做展示？需方的使用情境需釐清</div></div>
+
+    <div style="margin-top:14px;"></div>
+    <div class="sub-label">活動合作建議</div>
+    <div class="item"><div class="dot dot-dark"></div><div>活動端可優先接洽既有社群：<strong>Toastmasters、HRRR、WP 小聚</strong>，善用現有網絡快速驗證</div></div>
+
+    <div class="highlight-box">
+      <strong>核心建議</strong>：在投入開發資源前，先做需求驗證——包含 HR 端、企業端與技能展示方的實際痛點，避免做出沒人需要的功能。
+    </div>
+  </div>
+
+  <div class="section" style="border-color:#4A7BA6; box-shadow:4px 4px 0 #4A7BA6; background:#FFFAF0;">
+    <div class="section-head">
+      <span class="section-badge badge-blue">06</span>
+      <span class="section-title">Lydia 補充：六月活動與需求訪談</span>
+    </div>
+    <div class="item"><div class="dot dot-blue"></div><div>六月活動可優先與 <strong>Worca</strong> 合作，借助其平台資源與受眾擴大觸及</div></div>
+    <div class="item"><div class="dot dot-blue"></div><div>活動同步建立<strong>問卷需求訪談</strong>機制，蒐集真實使用者需求，為後續產品決策提供數據支撐</div></div>
+  </div>
+
+  <div class="tape" style="margin-top:24px;"></div>
+
+  <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;margin-bottom:12px;">ACTION ITEMS · 行動事項</div>
+  <div class="action-grid">
+    <div class="action-card" style="border-color:#E8B800;box-shadow:4px 4px 0 #E8B800;">
+      <div class="action-name" style="color:#E8B800;">QMOA LIU</div>
+      <div class="action-item">持續確保 Phase 0 / Phase 1 平台的 AI 品質保證</div>
+      <div class="action-item">與團隊討論並釐清各自角色與職責分工</div>
+      <div class="action-item">接洽 Toastmasters、HRRR、WP 小聚，啟動活動合作</div>
+    </div>
+    <div class="action-card" style="border-color:#E85D3A;box-shadow:4px 4px 0 #E85D3A;">
+      <div class="action-name" style="color:#E85D3A;">HSUAN</div>
+      <div class="action-item red">主導社群參與，確保 AI 模型改進與回饋整合的溝通清晰</div>
+    </div>
+    <div class="action-card" style="border-color:#4A7BA6;box-shadow:4px 4px 0 #4A7BA6;">
+      <div class="action-name" style="color:#4A7BA6;">LYDIA HUANG</div>
+      <div class="action-item blue">跟進專案排程，確保里程碑如期完成</div>
+      <div class="action-item blue">提供專家諮詢意見，推動里程碑前進</div>
+      <div class="action-item blue">洽談六月與 Worca 合辦活動，建立問卷需求訪談機制</div>
+    </div>
+    <div class="action-card" style="border-color:#6B8E23;box-shadow:4px 4px 0 #6B8E23;">
+      <div class="action-name" style="color:#6B8E23;">戴辰軒</div>
+      <div class="action-item green">建立 AI 人才評估標準（分析思維、韌性、創造力、積極性）</div>
+      <div class="action-item green">支援創意發展與基礎教育相關 AI 品質監控</div>
+    </div>
+    <div class="action-card" style="border-color:#1A1A1A;box-shadow:4px 4px 0 #1A1A1A;">
+      <div class="action-name">CHARLES</div>
+      <div class="action-item dark">訪談 HR 端與企業方，驗證履歷 A/B Test、AI 掃描、LinkedIn 接入等需求</div>
+      <div class="action-item dark">釐清技能需求方的實際使用情境，確認功能開發優先序</div>
+    </div>
+  </div>
+
+  <div style="border:2px solid #1A1A1A;padding:14px 18px;margin-top:20px;background:#1A1A1A;color:#F5F1E8;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;opacity:.7;">NEXT STEPS · 下次重點</span>
+    <span style="font-size:13px;">需求驗證優先 · 六月 Worca 活動籌備 · 社群合作接洽 · 功能優先序確認</span>
+  </div>
+</div>
